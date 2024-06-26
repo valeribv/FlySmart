@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>FlySmart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{css/bootstrap.css}" rel="stylesheet"/>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" th:href="@{/}">FlySmart</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <legend>FlySMart Ticket System</legend>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Travel Date: 09.03.2023</th>
+            <th scope="col">Departed date: 11.03.2023</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="contact : ${contacts}">
+            <td th:text="${contact.name}"></td>
+            <td th:text="${contact.number}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form class="form-horizontal" th:method="POST">
+        <fieldset>
+            <legend>Select your travel path:</legend>
+            <div class="form-group">
+                <label for="Start" class="col-lg-2 control-label">Start</label>
+                <div class="col-lg-10">
+                    <input type="text" autofocus="autofocus" name="Start" title="Type start point" class="form-control"
+                            pattern="[A-Z], [a-z]"
+                           id="Start"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="End" class="col-lg-2 control-label">End</label>
+                <div class="col-lg-10">
+                    <input type="text" autofocus="autofocus" name="End" title="Type end point" class="form-control"
+                           pattern="[0-9]"
+                           id="End"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary">Submit choice</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr/>
+
+    <footer>
+        <p>&copy; AMADEUS Project 2023</p>
+    </footer>
+</div>
+
+</body>
+</html>

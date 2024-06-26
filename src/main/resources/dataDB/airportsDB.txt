@@ -1,0 +1,13 @@
+ID	airport_code	latitude  	longitude   airport_name
+1   ACM         51.1328     13.7672     Dresden
+2   ATR          52.5597     13.2877     Berlin
+3   BCG         51.1481     0.19027     Gatwick
+4   MCY          51.8368     1.32245     Oxford
+5   JDY          42.5695     27.5151     Burgas
+6   OAS           42.6966     23.4114     Sofia
+7   YAG         39.4893     0.48162     Valencia
+8   PEM            48.9821     6.25135     Metz
+9   WYH         40.6204     14.9113     Salerno
+10  CGS          51.4693     0.17944     London
+
+

@@ -1,0 +1,12 @@
+ID	 City	  lat	   lang      country
+1	 Dresden  51.1328  13.7672   Germany
+2	 Berlin   52.5597  13.2877   Germany
+3	 Gatwick  51.1481  0.19027   UnatedKingdom
+4	 Oxford   51.8368  1.32245   UnatedKingdom
+5	 Burgas   42.5695  27.5151   Bulgaria
+6	 Sofia    42.6966  23.4114   Bulgaria
+7	 Valenci  39.4893  0.48162   Italy
+8	 Metz     48.9821  6.25135   Italy
+9	 Salerno  40.6204  14.9113   Spain
+10   London   51.4693  0.17944   UnatedKingdom
+
